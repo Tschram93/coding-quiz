@@ -13,6 +13,10 @@
 </head>
 
 <body class="bg-success p-2 bg-opacity-75">
+    <!-- Start Quiz Button-->
+    <button id="startBtn" class="btn btn-primary position-relative bottom-50 start-50 translate-middle my-2">
+        Start
+        Quiz </button>
     <!-- Card containing rules -->
     <div id="cardRules" class="card position-absolute px-2" style="width: 18rem;">
         <label for="quiz-rules" class="card-title text-center fw-bold fs-5"> Quiz Rules </label>
@@ -24,10 +28,7 @@
             <li> When the quiz has concluded enter initials and submit </li>
         </ul>
         <div class="position-relative">
-            <!-- Start Quiz Button-->
-            <button id="startBtn" class="btn btn-primary position-relative top-100 start-50 translate-middle my-2">
-                Start
-                Quiz </button>
+
         </div>
         <div class="buttonSection d-inline-flex">
             <button id="restartBtn" class="mx-1 btn btn-warning d-flex justify-content-around">
@@ -37,6 +38,8 @@
         </div>
     </div>
 
+    <!-- Quiz Box -->
+    <div id="quizBox"></div>
     <script src="script.js"></script>
 </body>
 <!-- position-relative top-100 start-50 translate-middle -->
