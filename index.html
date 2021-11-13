@@ -13,12 +13,8 @@
 </head>
 
 <body>
-    <div>
-        <!-- Start Quiz Button-->
-        <button id="startBtn" class="btn btn-primary"> Start Quiz </button>
-    </div>
     <!-- Card containing rules -->
-    <div class="card" style="width: 18rem;">
+    <div class="card position-absolute" style="width: 18rem;">
         <label for="quiz-rules" class="card-title"> Quiz Rules </label>
         <ul>
             <li> Multiple Choice </li>
@@ -27,6 +23,16 @@
             <li> If time runs out you will not be able to answer any more questions </li>
             <li> When the quiz has concluded enter initials and submit </li>
         </ul>
+        <div class="position-relative">
+            <!-- Start Quiz Button-->
+            <button id="startBtn" class="btn btn-primary position-relative top-100 start-50 translate-middle"> Start
+                Quiz </button>
+        </div>
+        <div class="buttonSection">
+            <button id="restartBtn" class="btn btn-warning position-relative top-100 start-50 translate-middle"> Restart
+            </button>
+            <button id="exitBtn" class="btn btn-danger position-relative top-100 translate-middle"> Exit </button>
+        </div>
     </div>
 
     <script src="script.js"></script>
