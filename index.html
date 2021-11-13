@@ -12,11 +12,11 @@
     <title>Coding Quiz</title>
 </head>
 
-<body>
+<body class="bg-success p-2 bg-opacity-75">
     <!-- Card containing rules -->
-    <div class="card position-absolute" style="width: 18rem;">
-        <label for="quiz-rules" class="card-title"> Quiz Rules </label>
-        <ul>
+    <div id="cardRules" class="card position-absolute px-2" style="width: 18rem;">
+        <label for="quiz-rules" class="card-title text-center fw-bold fs-5"> Quiz Rules </label>
+        <ul class="mx-2">
             <li> Multiple Choice </li>
             <li> 5 Minutes to complete quiz </li>
             <li> Each incorrect answer will subtract time from the timer </li>
@@ -25,17 +25,20 @@
         </ul>
         <div class="position-relative">
             <!-- Start Quiz Button-->
-            <button id="startBtn" class="btn btn-primary position-relative top-100 start-50 translate-middle"> Start
+            <button id="startBtn" class="btn btn-primary position-relative top-100 start-50 translate-middle my-2">
+                Start
                 Quiz </button>
         </div>
-        <div class="buttonSection">
-            <button id="restartBtn" class="btn btn-warning position-relative top-100 start-50 translate-middle"> Restart
+        <div class="buttonSection d-inline-flex">
+            <button id="restartBtn" class="mx-1 btn btn-warning d-flex justify-content-around">
+                Restart
             </button>
-            <button id="exitBtn" class="btn btn-danger position-relative top-100 translate-middle"> Exit </button>
+            <button id="exitBtn" class="btn btn-danger d-flex justify-content-around"> Exit </button>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+<!-- position-relative top-100 start-50 translate-middle -->
 
 </html>
