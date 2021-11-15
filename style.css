@@ -4,6 +4,16 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 33.75rem;
+}
+
+#finishCrown {
+    margin-bottom: 0.625rem;
+}
+
+#finishedQuiz {
+    margin-top: 0.625rem;
+    padding-top: 0.625rem;
 }
 
 #optionList {
@@ -11,6 +21,7 @@
 }
 
 #quizBox {
+    display: none;
     width: 40%;
 }
 
@@ -19,8 +30,58 @@
     padding: 5px 30px ;
 }
 
+#cardRules,
+#resultBox,
+#startBtn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #restartBtn{
+    border: 2px solid #003f00;
     margin-left: 6px;
+}
+
+#resultBox {
+    border: 6px solid #006400;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    height: 23rem;
+    justify-content: space-between;
+    text-align: center;
+    width: 33.75rem;
+
+}
+
+#resultBox .icon {
+    font-size: 90px;
+    padding-right: 6rem;
+    margin-bottom: 10px;
+}
+
+#score span {
+    display: flex;
+    font-weight: 500;
+    margin: .625rem 0;
+}
+
+.resultNumbers {
+    font-weight: 600;
+    margin: 0.625rem 0 ;
+    padding: 0 4px;
+}
+
+#restartBtn,
+#exitBtn {
+    margin: 0 0.625rem;
+    
+}
+
+#startBtn {
+    display: none;
 }
 
 #timer{

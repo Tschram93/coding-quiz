@@ -14,11 +14,11 @@
 
 <body class="bg-success p-2 bg-opacity-75">
     <!-- Start Quiz Button-->
-    <button id="startBtn" class="btn btn-primary position-relative bottom-50 start-50 translate-middle my-2">
+    <button id="startBtn" class="btn btn-primary fw-bold fs-5">
         Start
         Quiz </button>
     <!-- Card containing rules -->
-    <div id="cardRules" class="card position-absolute px-2" style="width: 18rem;">
+    <div id="cardRules" class="card px-2" style="width: 18rem;">
         <label for="quiz-rules" class="card-title text-center fw-bold fs-5"> Quiz Rules </label>
         <ul class="mx-2">
             <li> Multiple Choice </li>
@@ -27,15 +27,7 @@
             <li> If time runs out you will not be able to answer any more questions </li>
             <li> When the quiz has concluded enter initials and submit </li>
         </ul>
-        <div class="position-relative">
 
-        </div>
-        <div class="buttonSection d-inline-flex">
-            <button id="restartBtn" class="mx-1 btn btn-warning d-flex justify-content-around">
-                Restart
-            </button>
-            <button id="exitBtn" class="btn btn-danger d-flex justify-content-around"> Exit </button>
-        </div>
     </div>
 
     <!-- Quiz Box -->
@@ -89,12 +81,30 @@
                 <span>
                     <p>1</p> of <p>10</p> Questions
                 </span>
-                <button id="nextBtn" class="btn btn-success"> Next </button>
             </div>
+            <button id="nextBtn" class="btn btn-success py-1 mb-3"> Next </button>
         </footer>
     </div>
+
+    <!-- Results Section -->
+    <div id="resultBox"
+        class="d-flex d-flex flex-column align-items-center justify-content-between bg-white rounded text-center p-4">
+        <div id="finishCrown" class="icon">
+            <i class="fas fa-crown text-success"></i>
+        </div> <br>
+        <div id="finishedQuiz" class="fs-5 fw-bold"> The Quiz has been completed! </div>
+        <div id="score" class="fs-5">
+            <span class="fs-5">You scored <p class="resultNumbers">#</p> of <p class="resultNumbers">5</p>!</span>
+        </div>
+        <div class="buttonSection d-flex my-4">
+            <button id="restartBtn" class="btn btn-success fw-bold d-flex justify-content-around">
+                Restart
+            </button>
+            <button id="exitBtn" class="btn btn-white text-success fw-bold border-2 border-success"> Exit </button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
-<!-- position-relative top-100 start-50 translate-middle -->
 
 </html>
