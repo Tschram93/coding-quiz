@@ -4,12 +4,12 @@ let questions = [{
         num: 1,
         question: ' Where is the correct location to insert javascript into the HTML ',
         options: [
-            `<body> section`,
-            `<head> section`,
-            `With the <html> tag`,
-            `Both the <head> and <body> are correct`
+            `body section`,
+            `head section`,
+            `With the html tag`,
+            `Both the head and body are correct`
         ],
-        answer: `Both the <head> and <body> are correct`
+        answer: `Both the head and body are correct`
     },
     {
         num: 2,

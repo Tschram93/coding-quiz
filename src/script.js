@@ -5,6 +5,7 @@
 
                 // Question Box
                 const options = document.querySelectorAll('.option');
+                const optionList = document.querySelector('#optionList');
                 const quizBox = document.querySelector('#quizBox');
                 const questionText = document.querySelector('#questionText');
                 const timer = document.querySelector('#timer');
@@ -41,7 +42,7 @@
                     if (quizBox.style.display = "block") {
                         cardRules.style.display = "none"
                     }
-                    showQuestions();
+                    showQuestions(0);
                 })
 
                 // nextBtn.addEventListener('click', )
@@ -59,7 +60,13 @@
                 let questionCount = 0;
 
                 // Functions
-                function showQuestions() {
-                    let questionsTag = `<span>` + questions[0].question + `</span>`;
+                function showQuestions(i) {
+                    let questionsTag = `<span>` + questions[i].question + `</span>`;
+                    let optionsTag = `<div class="option border border-primary rounded mb-2 px-2 py-3">` + questions[i].options[0] + `<span></span></div>` +
+                        `<div class="option border border-primary rounded mb-2 px-2 py-3">` + questions[i].options[1] + `<span></span></div>` +
+                        `<div class="option border border-primary rounded mb-2 px-2 py-3">` + questions[i].options[2] + `<span></span></div>` +
+                        `<div class="option border border-primary rounded mb-2 px-2 py-3">` + questions[i].options[3] + `<span></span></div>`;
+
                     questionText.innerHTML = questionsTag;
+                    optionList.innerHTML = optionsTag;
                 };
