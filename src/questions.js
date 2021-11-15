@@ -24,14 +24,14 @@ let questions = [{
     },
     {
         num: 3,
-        question: ` How is a comment written in JavaScript?`,
+        question: ` Which is not a valid operator?`,
         options: [
-            `<!--This is a comment-->`,
-            `//This is a comment`,
-            `#This is a comment`,
-            `none of these are correct`
+            '+=',
+            `++`,
+            `==`,
+            `=+`
         ],
-        answer: `//This is a comment`
+        answer: `=+`
     },
     {
         num: 4,

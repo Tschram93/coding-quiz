@@ -43,9 +43,10 @@
                         cardRules.style.display = "none"
                     }
                     showQuestions(0);
+                    questionCounter(i)
                 })
 
-                // nextBtn.addEventListener('click', )
+                let questionNum = 1;
                 // restartBtn.addEventListener('click', )
                 returnBtn.addEventListener('click', () => {
                     cardRules.style.display = "none";
@@ -59,9 +60,20 @@
 
                 let questionCount = 0;
 
+                nextBtn.addEventListener('click', () => {
+                    if (questionCount < questions.length - 1) {
+                        questionCount++;
+                        questionNum++;
+                        showQuestions(questionCount);
+                        questionCounter(questionNum);
+                    } else {
+                        console.log(`That's all of the questions`);
+                    }
+                })
+
                 // Functions
                 function showQuestions(i) {
-                    let questionsTag = `<span>` + questions[i].question + `</span>`;
+                    let questionsTag = `<span>` + questions[i].num + ". " + questions[i].question + `</span>`;
                     let optionsTag = `<div class="option border border-primary rounded mb-2 px-2 py-3">` + questions[i].options[0] + `<span></span></div>` +
                         `<div class="option border border-primary rounded mb-2 px-2 py-3">` + questions[i].options[1] + `<span></span></div>` +
                         `<div class="option border border-primary rounded mb-2 px-2 py-3">` + questions[i].options[2] + `<span></span></div>` +
@@ -69,4 +81,13 @@
 
                     questionText.innerHTML = questionsTag;
                     optionList.innerHTML = optionsTag;
+                    for (let i = 0;; i < options.length; i++) {
+                        optionList[i].setAttribute('onclick', 'optionSelected(this)')
+                    }
                 };
+
+                function questionCounter(i) {
+                    const otherCounter = quizBox.querySelector('#totalQuestions');
+                    let totalQuestionCount = `<span><p>` + i + `</p> of <p>` + questions.length + `</p>Questions</span>`;
+                    otherCounter.innerHTML = totalQuestionCount;
+                }
