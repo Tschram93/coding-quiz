@@ -6,7 +6,20 @@
     transform: translate(-50%, -50%);
 }
 
+#quizBox {
+    width: 40%;
+}
+
+#quizHeader{
+    margin-bottom: 5px;
+    padding: 5px 30px ;
+}
 
 #restartBtn{
     margin-left: 6px;
+}
+
+#timer{
+    height: 2.75rem;
+    width: 9rem;
 }

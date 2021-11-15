@@ -39,11 +39,17 @@
     </div>
 
     <!-- Quiz Box -->
-    <div id="quizBox" class="w-1/4 bg-white rounded-3">
-        <header class="h-16 px-7">
-            <span class="title"> Quiz Application </span>
-            <div class="timeText"> Remaining Time </div>
-            <div class="timer"> 5:00 </div>
+    <div id="quizBox" class="w-1/2 bg-white rounded-3">
+        <header id="quizHeader" class="d-flex align-items-center justify-content-between rounded-top shadow">
+            <span id="title" class="fs-4 fw-bold"> Quiz Application </span>
+
+
+            <div id="timer"
+                class="d-flex align-items-center justify-content-around text-center bg-info px-2 border border-dark rounded">
+                <div class="timeText fs-8"> Time: </div>
+                <div> 5:00 </div>
+            </div>
+
         </header>
         <section>
             <div class="questionText">
