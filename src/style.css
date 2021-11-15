@@ -35,12 +35,6 @@
     display: block;
 }
 
-#quizBox {
-    display: block;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.9);
-    width: 40%;
-}
 
 #quizHeader{
     margin-bottom: 5px;
@@ -63,7 +57,7 @@
 }
 
 #resultBox {
-    display: hidden;
+    display: none;
     border: 6px solid #006400; 
     align-items: center;
     flex-direction: column;
@@ -172,4 +166,11 @@
     background: #bb8897;
     border-color: #e03d3d;
     color: #e03d3d;
+}
+
+#quizBox {
+    display: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 40%;
 }

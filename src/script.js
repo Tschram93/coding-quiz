@@ -27,13 +27,30 @@
 
 
                 // Event Listeners
+
                 // Start button displays the Rule Card
                 startBtn.addEventListener('click', () => {
                     cardRules.style.display = "block";
+                    if (cardRules.style.display = "block") {
+                        startBtn.style.display = "none"
+                    } // Hides display button
                 })
+
+                beginBtn.addEventListener('click', () => {
+                    quizBox.setAttribute("id", 'test')
+                    if (quizBox.style.display = "block") {
+                        cardRules.style.display = "none"
+                    }
+                })
+
                 // nextBtn.addEventListener('click', )
                 // restartBtn.addEventListener('click', )
-
+                returnBtn.addEventListener('click', () => {
+                    cardRules.style.display = "none";
+                    if (cardRules.style.display = "none") {
+                        startBtn.style.display = "block"
+                    }
+                })
                 // exitBtn.addEventListener('click', () => {
                 //     cardRules.style.display = "none";;
                 // })
