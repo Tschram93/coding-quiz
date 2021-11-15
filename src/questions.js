@@ -78,6 +78,36 @@ let questions = [{
         answer: `&&`
     },
     {
-
+        num: 8,
+        question: `When you want to use JavaScript to manipulate the currently displayed Web page, the Web page's JavaScript object name is:`,
+        options: [
+            `Frame`,
+            `Window`,
+            `Document`,
+            `browser_window`
+        ],
+        answer: `Document`
+    },
+    {
+        num: 9,
+        question: `In a form, if you want users to select only one option out of many, use:`,
+        options: [
+            `Text Boxes`,
+            `Check Boxes`,
+            `Radio Buttons`,
+            `Either A or B`
+        ],
+        answer: `Radio Buttons`
+    },
+    {
+        num: 10,
+        question: `How do you write a conditional statement for executing some statements only if "i" is NOT equal to 5?`,
+        options: [
+            `if (i != 5)`,
+            `if <>5`,
+            `if (i <> 5)`,
+            `if =! 5 then`
+        ],
+        answer: `if (i != 5)`
     }
 ];
