@@ -6,6 +6,10 @@
     transform: translate(-50%, -50%);
 }
 
+#optionList {
+    display: block;
+}
+
 #quizBox {
     width: 40%;
 }
@@ -20,6 +24,29 @@
 }
 
 #timer{
+    height: 1.85rem;
+    width: 2.8rem;
+    user-select: none;
+}
+
+#timerBox{
     height: 2.75rem;
     width: 9rem;
+}
+
+#timeText {
+    user-select: none;
+}
+
+#quizBox section {
+    padding: 1.6rem 1.85rem;
+    z-index: 99;
+}
+
+.option {
+    background-color: #bfd5dd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
