@@ -43,7 +43,7 @@
                         cardRules.style.display = "none"
                     }
                     showQuestions(0);
-                    questionCounter(i)
+                    questionCounter(1)
                 })
 
                 let questionNum = 1;
@@ -72,6 +72,7 @@
                 })
 
                 // Functions
+
                 function showQuestions(i) {
                     let questionsTag = `<span>` + questions[i].num + ". " + questions[i].question + `</span>`;
                     let optionsTag = `<div class="option border border-primary rounded mb-2 px-2 py-3">` + questions[i].options[0] + `<span></span></div>` +
@@ -81,10 +82,15 @@
 
                     questionText.innerHTML = questionsTag;
                     optionList.innerHTML = optionsTag;
-                    for (let i = 0;; i < options.length; i++) {
-                        optionList[i].setAttribute('onclick', 'optionSelected(this)')
+                    for (let i = 0; i < options.length; i++) {
+                        options[i].setAttribute('onclick', `optionSelected(this)`);
                     }
                 };
+
+                function optionSelected(answer) {
+                    let userSelected = answer.textContent;
+                    console.log(userSelected);
+                }
 
                 function questionCounter(i) {
                     const otherCounter = quizBox.querySelector('#totalQuestions');
