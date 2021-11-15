@@ -38,15 +38,60 @@
     user-select: none;
 }
 
+#quizBox footer {
+    height: 3.75rem;
+    width:100%;
+}
+
 #quizBox section {
     padding: 1.6rem 1.85rem;
     z-index: 99;
 }
 
+#totalQuestions span {
+    display: flex;
+    user-select: none;
+}
+
+#totalQuestions span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.icon {
+    border: 2px solid transparent;
+    border-radius: 50%;
+    height: 1.62rem;
+    line-height: 25px;
+    pointer-events: none;
+    text-align: center;
+    width: 1.62rem;
+}
+
 .option {
     background-color: #bfd5dd;
     cursor: pointer;
+    font-size: 17px;
+    transition: all 0.35s ease;;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.option:hover {
+    background: #cce5ff;
+    border-color: #00008b;
+    color: #0000ff;
+}
+
+.tick {
+    color: #008000;
+    border-color: #23903c;
+    background: #689773;
+}
+
+.cross {
+    background: #bb8897;
+    border-color: #e03d3d;
+    color: #e03d3d;
 }
