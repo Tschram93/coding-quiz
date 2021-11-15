@@ -21,7 +21,9 @@
 }
 
 #quizBox {
-    display: none;
+    display: block;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
     width: 40%;
 }
 
@@ -31,6 +33,7 @@
 }
 
 #cardRules,
+#quizBox,
 #resultBox,
 #startBtn {
     position: absolute;
@@ -45,15 +48,14 @@
 }
 
 #resultBox {
-    border: 6px solid #006400;
-    display: flex; 
+    display: display;
+    border: 6px solid #006400; 
     align-items: center;
     flex-direction: column;
     height: 23rem;
     justify-content: space-between;
     text-align: center;
     width: 33.75rem;
-
 }
 
 #resultBox .icon {
@@ -81,7 +83,7 @@
 }
 
 #startBtn {
-    display: none;
+    display: block;
 }
 
 #timer{
