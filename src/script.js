@@ -41,6 +41,7 @@
                     if (quizBox.style.display = "block") {
                         cardRules.style.display = "none"
                     }
+                    showQuestions();
                 })
 
                 // nextBtn.addEventListener('click', )
@@ -55,5 +56,10 @@
                 //     cardRules.style.display = "none";;
                 // })
 
+                let questionCount = 0;
 
                 // Functions
+                function showQuestions() {
+                    let questionsTag = `<span>` + questions[0].question + `</span>`;
+                    questionText.innerHTML = questionsTag;
+                };
