@@ -27,67 +27,72 @@
             <li> If time runs out you will not be able to answer any more questions </li>
             <li> When the quiz has concluded enter initials and submit </li>
         </ul>
-
+        <div id="rulesButtons" class="d-flex align-content-around justify-content-evenly mb-3">
+            <button id="beginBtn" class="btn btn-success fw-bold">
+                Begin
+            </button>
+            <button id="returnBtn" class="btn btn-white text-success fw-bold border-2 border-success"> Return </button>
+        </div>
     </div>
 
     <!-- Quiz Box -->
-    <div id="quizBox" class="w-1/2 bg-white rounded-3">
-        <header id="quizHeader" class="d-flex align-items-center justify-content-between rounded-top shadow">
-            <span id="title" class="fs-4 fw-bold"> Quiz Application </span>
+    <!-- <div id="quizBox" class="w-1/2 bg-white rounded-3"> -->
+    <!-- <header id="quizHeader" class="d-flex align-items-center justify-content-between rounded-top shadow">
+        <span id="title" class="fs-4 fw-bold"> Quiz Application </span>
 
-            <div id="timerBox"
-                class="d-flex align-items-center justify-content-around text-center bg-info px-2 border border-dark rounded">
-                <div id="timeText" class="fs-5"> Time: </div>
-                <div id="timer" class="fs-6 text-center text-white bg-dark rounded border border-secondary"> 5:00 </div>
-            </div>
+        <div id="timerBox"
+            class="d-flex align-items-center justify-content-around text-center bg-info px-2 border border-dark rounded">
+            <div id="timeText" class="fs-5"> Time: </div>
+            <div id="timer" class="fs-6 text-center text-white bg-dark rounded border border-secondary"> 5:00 </div>
+        </div>
 
-        </header>
-        <section class="bg-white">
-            <div id="questionText" class="fs-3 fw-bold">
-                <span> Question goes here </span>
-            </div>
-            <div id="optionList" class="px-1 py-4">
-                <div class="option border border-primary rounded mb-2 px-2 py-3">
-                    <span>First Option</span>
-                    <div class="icon">
-                        <div class="icon tick"><i class="fas fa-check"></i></div></i>
-                    </div>
-                </div>
-
-                <div class="option border border-primary rounded mb-2 px-2 py-3">
-                    <span>Second Option</span>
-                    <div class="icon">
-                        <div class="icon cross"><i class="fas fa-check"></i></div></i>
-                    </div>
-                </div>
-
-                <div class="option border border-primary rounded mb-2 px-2 py-3">
-                    <span>Third Option</span>
-                    <div class="icon">
-                        <div class="icon cross"></div>
-                    </div>
-                </div>
-
-                <div class="option border border-primary rounded mb-2 px-2 py-3">
-                    <span>Fourth Option</span>
-                    <div class="icon">
-                        <div class="icon cross"></div>
-                    </div>
+    </header>
+    <section class="bg-white">
+        <div id="questionText" class="fs-3 fw-bold">
+            <span> Question goes here </span>
+        </div>
+        <div id="optionList" class="px-1 py-4">
+            <div class="option border border-primary rounded mb-2 px-2 py-3">
+                <span>First Option</span>
+                <div class="icon">
+                    <div class="icon tick"><i class="fas fa-check"></i></div></i>
                 </div>
             </div>
-        </section>
-        <footer class="d-flex items-center justify-content-between px-4">
-            <div id="totalQuestions" class="">
-                <span>
-                    <p>1</p> of <p>10</p> Questions
-                </span>
+
+            <div class="option border border-primary rounded mb-2 px-2 py-3">
+                <span>Second Option</span>
+                <div class="icon">
+                    <div class="icon cross"><i class="fas fa-check"></i></div></i>
+                </div>
             </div>
-            <button id="nextBtn" class="btn btn-success py-1 mb-3"> Next </button>
-        </footer>
-    </div>
+
+            <div class="option border border-primary rounded mb-2 px-2 py-3">
+                <span>Third Option</span>
+                <div class="icon">
+                    <div class="icon cross"></div>
+                </div>
+            </div>
+
+            <div class="option border border-primary rounded mb-2 px-2 py-3">
+                <span>Fourth Option</span>
+                <div class="icon">
+                    <div class="icon cross"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex items-center justify-content-between px-4">
+        <div id="totalQuestions" class="">
+            <span>
+                <p>1</p> of <p>10</p> Questions
+            </span>
+        </div>
+        <button id="nextBtn" class="btn btn-success py-1 mb-3"> Next </button>
+    </footer>
+    </div> -->
 
     <!-- Results Section -->
-    <div id="resultBox"
+    <!-- <div id="resultBox"
         class="d-flex d-flex flex-column align-items-center justify-content-between bg-white rounded text-center p-4">
         <div id="finishCrown" class="icon">
             <i class="fas fa-crown text-success"></i>
@@ -102,7 +107,7 @@
             </button>
             <button id="exitBtn" class="btn btn-white text-success fw-bold border-2 border-success"> Exit </button>
         </div>
-    </div>
+    </div> -->
 
     <script src="../src/script.js"></script>
 </body>
